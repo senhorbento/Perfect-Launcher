@@ -480,7 +480,7 @@ namespace Perfect_Launcher
             arquiteturaToolStripMenuItem.Text = (RGames.Count > 0) ? "Arquitetura (jogo em execução)" : "Arquitetura";
             arquiteturaToolStripMenuItem.Enabled = !(RGames.Count > 0);
             // Só deixa marcar o 64 bits caso o sistema e o jogo suporte
-            usar64BitsToolStripMenuItem.Enabled = Environment.Is64BitOperatingSystem && File.Exists(Application.StartupPath + "\\" + Exe64);
+            //usar64BitsToolStripMenuItem.Enabled = Environment.Is64BitOperatingSystem && File.Exists(Application.StartupPath + "\\" + Exe64);
 
             usar32BitsToolStripMenuItem.Checked = !Settings.Default.bUse64;
             usar64BitsToolStripMenuItem.Checked = Settings.Default.bUse64;
@@ -576,8 +576,12 @@ namespace Perfect_Launcher
                 Directory.CreateDirectory(Application.StartupPath + "\\Perfect Launcher\\Lista de Combos");
 
             // Cria a pasta de logs
-            if (!Directory.Exists(Application.StartupPath + "\\Perfect Launcher\\Erros"))
-                Directory.CreateDirectory(Application.StartupPath + "\\Perfect Launcher\\Erros");
+            if (!Directory.Exists(Application.StartupPath + "\\Perfect Launcher\\Logs"))
+                Directory.CreateDirectory(Application.StartupPath + "\\Perfect Launcher\\Logs");
+
+            // Cria arquivo accounts
+            if (!Directory.Exists(Application.StartupPath + "\\userdata\\accounts.txt"))
+                File.WriteAllText(Application.StartupPath + "\\userdata\\accounts.txt", "false");
 
             RollGlobalMessages();
             DownloadMessages();
