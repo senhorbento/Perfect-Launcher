@@ -41,5 +41,10 @@ namespace Perfect_Launcher
                 wm.ShowMessage("Não é possível utilizar o mesmo atalho para duas (ou mais) coisas!", 2);
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

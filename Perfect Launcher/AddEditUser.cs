@@ -13,12 +13,12 @@ namespace Perfect_Launcher
 {
     public partial class AddEditUser : Form
     {
-        Form1 f1;
+        Main f1;
 
         bool bEditar;
         int Id;
 
-        public AddEditUser(Form1 frm1, int Index = -1, bool bEdit = false)
+        public AddEditUser(Main frm1, int Index = -1, bool bEdit = false)
         {
             InitializeComponent();
 

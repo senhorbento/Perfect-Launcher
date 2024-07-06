@@ -13,11 +13,11 @@ namespace Perfect_Launcher
 {
     public partial class Manage : Form
     {
-        Form1 f1;
+        Main f1;
 
         int newindex = 0;
 
-        public Manage(Form1 frm1)
+        public Manage(Main frm1)
         {
             InitializeComponent();
 

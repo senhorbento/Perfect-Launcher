@@ -17,7 +17,7 @@ using System.Reflection;
 
 namespace Perfect_Launcher
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         // Form para combos
         public Combo ComboForm;
@@ -57,7 +57,7 @@ namespace Perfect_Launcher
         [DllImport("user32.dll")]
         internal static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
 
@@ -163,7 +163,7 @@ namespace Perfect_Launcher
                     usersComboBox.SelectedIndex = Settings.Default.LastIndexUsed;
                 else
                     if (usersComboBox.Items.Count > 0)
-                        usersComboBox.SelectedIndex = 0;
+                    usersComboBox.SelectedIndex = 0;
             }
 
             // Chama a função de update nos forms necessários (caso estejam abertos)
@@ -173,7 +173,7 @@ namespace Perfect_Launcher
 
         public void UpdateBackgroundImage()
         {
-           if (File.Exists(Settings.Default.BackgroundImg)) 
+            if (File.Exists(Settings.Default.BackgroundImg))
                 BackgroundImage = Image.FromFile(Settings.Default.BackgroundImg);
         }
 
@@ -416,7 +416,7 @@ namespace Perfect_Launcher
             {
                 while (reader.ReadLine() != null)
                     lineCounter++;
-                
+
                 return lineCounter;
             }
         }
@@ -480,7 +480,7 @@ namespace Perfect_Launcher
             arquiteturaToolStripMenuItem.Text = (RGames.Count > 0) ? "Arquitetura (jogo em execução)" : "Arquitetura";
             arquiteturaToolStripMenuItem.Enabled = !(RGames.Count > 0);
             // Só deixa marcar o 64 bits caso o sistema e o jogo suporte
-            usar64BitsToolStripMenuItem.Enabled = Environment.Is64BitOperatingSystem && File.Exists(Application.StartupPath + "\\" + Exe64);
+            //usar64BitsToolStripMenuItem.Enabled = Environment.Is64BitOperatingSystem && File.Exists(Application.StartupPath + "\\" + Exe64);
 
             usar32BitsToolStripMenuItem.Checked = !Settings.Default.bUse64;
             usar64BitsToolStripMenuItem.Checked = Settings.Default.bUse64;
@@ -583,7 +583,7 @@ namespace Perfect_Launcher
             DownloadMessages();
             RefreshUsernamesOnComboBox();
 
-            CheckForClientUpdates();
+            //CheckForClientUpdates();
 
             // Reseta a checkbox da torre do martírio caso seja quarta-feira
             if (DateTime.Today.ToString("D").Contains("quarta-feira"))
@@ -614,7 +614,7 @@ namespace Perfect_Launcher
                     }
                 }
             }
-            catch(Exception x)
+            catch (Exception x)
             {
                 WM.ShowMessage(x.ToString(), 3);
             }
@@ -632,7 +632,7 @@ namespace Perfect_Launcher
                 // Seta o form temporáriamente como topmost por 2.5 segundos
                 TemporaryTopMost(2500);
             }
-            catch(Exception x)
+            catch (Exception x)
             {
                 // Caso dê algo errado...
                 WM.ShowMessage(x.ToString(), 3);
@@ -753,7 +753,7 @@ namespace Perfect_Launcher
                 Process p = Process.GetProcessById(ProcessId);
 
                 // Checa se o processo bate com o do jogo                    // .exe minúsculo no caso de ser x64 e maiúsculo no caso de ser x32
-                string ProcessName = 
+                string ProcessName =
                     string.IsNullOrWhiteSpace(Settings.Default.ExecutavelCustom)
                     ? (Settings.Default.bUse64 ? Exe64 : Exe32).Replace(Settings.Default.bUse64 ? ".exe" : ".EXE", "")
                     : Settings.Default.ExecutavelCustom;
@@ -970,7 +970,7 @@ namespace Perfect_Launcher
                 // Seta o form temporáriamente como topmost por 1.5 segundos
                 TemporaryTopMost(1500);
             }
-                
+
             if (e.Button == MouseButtons.Right)
                 notifyIcon1.ContextMenuStrip.Show();
         }
@@ -1086,7 +1086,7 @@ namespace Perfect_Launcher
 
         private void customizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void calculadoraDeFamaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1153,7 +1153,8 @@ namespace Perfect_Launcher
             try
             {
                 Process.Start(Application.StartupPath + "\\Perfect Launcher\\Logs.txt");
-            }catch(Exception x)
+            }
+            catch (Exception x)
             {
                 WM.ShowMessage(x.ToString(), 3);
             }
@@ -1346,6 +1347,50 @@ namespace Perfect_Launcher
         private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
         {
             Settings.Default.ExecutavelCustom = ((ToolStripTextBox)sender).Text;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (usersComboBox.Items.Count <= 0)
+                return;
+
+            var wm = new WarningMessages();
+            if (wm.ShowMessage($"Abrir TODAS as contas pode ser um procedimento pesado.\nTem certeza que deseja continuar?", 1, true) == DialogResult.Yes)
+            {
+                var qtContas = usersComboBox.Items.Count;
+
+                for (int i = 0; i < qtContas; i++)
+                {
+                    OpenGame(i, IgnorarAbertas: true);
+                    Thread.Sleep(800);
+                }
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (usersComboBox.SelectedItem == null)
+                return;
+
+            if (usersComboBox.Items.Count <= 0)
+                return;
+
+            var wm = new WarningMessages();
+            if (wm.ShowMessage($"Abrir TODAS as contas pode ser um procedimento pesado.\nTem certeza que deseja continuar?", 1, true) == DialogResult.Yes)
+            {
+                var qtContas = usersComboBox.Items.Count;
+                for (int i = 0; i < qtContas; i++)
+                    if (i != usersComboBox.SelectedIndex)
+                    {
+                        OpenGame(i, IgnorarAbertas: true);
+                        Thread.Sleep(800);
+                    }
+            }
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -43,7 +43,7 @@ namespace Perfect_Launcher
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(41, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 16);
+            this.label1.Size = new System.Drawing.Size(170, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Revezar entre duas contas:";
             // 
@@ -52,6 +52,7 @@ namespace Perfect_Launcher
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",
@@ -71,12 +72,14 @@ namespace Perfect_Launcher
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(225, 24);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
+            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",
@@ -102,7 +105,7 @@ namespace Perfect_Launcher
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(44, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 16);
+            this.label2.Size = new System.Drawing.Size(163, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Pular para conta de baixo:";
             // 
@@ -111,6 +114,7 @@ namespace Perfect_Launcher
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
+            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",
@@ -136,7 +140,7 @@ namespace Perfect_Launcher
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 16);
+            this.label3.Size = new System.Drawing.Size(159, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Pular para conta de cima:";
             // 

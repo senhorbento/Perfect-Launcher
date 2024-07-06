@@ -14,9 +14,9 @@ namespace Perfect_Launcher
 {
     public partial class Customizar : Form
     {
-        Form1 f1;
+        Main f1;
 
-        public Customizar(Form1 frm1)
+        public Customizar(Main frm1)
         {
             InitializeComponent();
 

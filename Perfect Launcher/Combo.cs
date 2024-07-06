@@ -91,7 +91,7 @@ namespace Perfect_Launcher
         public const int SW_RESTORE = 9;
 
         // Form1 ref
-        Form1 f1;
+        Main f1;
 
         // Ordem de processo das contas na fila
         List<Process> ProcessQueue = new List<Process>();
@@ -111,7 +111,7 @@ namespace Perfect_Launcher
         // Bloqueia ações envolvendo contas quando alterações estiverem sendo feitas
         bool bChangeBlocked = false;
 
-        public Combo(Form1 frm1)
+        public Combo(Main frm1)
         {
             InitializeComponent();
 
@@ -1041,6 +1041,16 @@ namespace Perfect_Launcher
 
             if (listBox2.Items.Count > listBox3.SelectedIndex)
                 listBox2.SelectedIndex = listBox3.SelectedIndex;
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            foreach (string s in listBox1.Items)
+            {
+                if (!IndexQueue.Contains(Settings.Default.User.IndexOf(s)))
+                    IndexQueue.Add(Settings.Default.User.IndexOf(s));
+            }
+            UpdateListBox2();
         }
     }
 
