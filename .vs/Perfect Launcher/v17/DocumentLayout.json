@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|d:\\workspace\\perfect-launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|d:\\workspace\\perfect-launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -20,9 +20,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|d:\\workspace\\perfect-launcher\\perfect launcher\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,8 +53,7 @@
               "ToolTip": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Perfect Launcher.csproj",
               "RelativeToolTip": "Perfect Launcher\\Perfect Launcher.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-06T00:22:25.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T00:22:25.912Z"
             },
             {
               "$type": "Document",
@@ -69,8 +65,7 @@
               "RelativeToolTip": "Perfect Launcher\\Main.cs",
               "ViewState": "AQIAAF0FAAAAAAAAAAAUwHAFAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T00:10:39.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T00:10:39.245Z"
             },
             {
               "$type": "Document",
@@ -81,8 +76,7 @@
               "ToolTip": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Main.cs [Design]",
               "RelativeToolTip": "Perfect Launcher\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T00:08:14.263Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-06T00:08:14.263Z"
             },
             {
               "$type": "Document",
@@ -93,8 +87,7 @@
               "ToolTip": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Combo.cs [Design]",
               "RelativeToolTip": "Perfect Launcher\\Combo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T00:06:28.614Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-06T00:06:28.614Z"
             }
           ]
         }
