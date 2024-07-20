@@ -52,7 +52,6 @@ namespace Perfect_Launcher
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",
@@ -79,7 +78,6 @@ namespace Perfect_Launcher
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",
@@ -114,7 +112,6 @@ namespace Perfect_Launcher
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "",
             "Shift Esquerdo",
             "Shift Direito",
             "Ctrl Esquerdo",

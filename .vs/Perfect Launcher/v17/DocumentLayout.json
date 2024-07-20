@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\workspace\\Perfect-Launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|d:\\workspace\\perfect-launcher\\perfect launcher\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|d:\\workspace\\perfect-launcher\\perfect launcher\\formatalhos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\formatalhos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +23,7 @@
       "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Perfect Launcher||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|D:\\workspace\\Perfect-Launcher\\perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C2513B46-EFB1-4A76-B69A-D8F3DB294E92}|Perfect Launcher\\Perfect Launcher.csproj|solutionrelative:perfect launcher\\combo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +38,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormAtalhos.cs [Design]",
+              "DocumentMoniker": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\FormAtalhos.cs",
+              "RelativeDocumentMoniker": "Perfect Launcher\\FormAtalhos.cs",
+              "ToolTip": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\FormAtalhos.cs [Design]",
+              "RelativeToolTip": "Perfect Launcher\\FormAtalhos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T15:51:41.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Main.Designer.cs",
               "DocumentMoniker": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Main.Designer.cs",
               "RelativeDocumentMoniker": "Perfect Launcher\\Main.Designer.cs",
@@ -41,12 +57,11 @@
               "RelativeToolTip": "Perfect Launcher\\Main.Designer.cs",
               "ViewState": "AQIAAN0BAAAAAAAAAADgv/EBAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T00:27:28.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T00:27:28.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Perfect Launcher",
               "DocumentMoniker": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Perfect Launcher.csproj",
               "RelativeDocumentMoniker": "Perfect Launcher\\Perfect Launcher.csproj",
@@ -57,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Main.cs",
               "RelativeDocumentMoniker": "Perfect Launcher\\Main.cs",
@@ -80,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Combo.cs [Design]",
               "DocumentMoniker": "D:\\workspace\\Perfect-Launcher\\Perfect Launcher\\Combo.cs",
               "RelativeDocumentMoniker": "Perfect Launcher\\Combo.cs",
